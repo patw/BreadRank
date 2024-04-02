@@ -23,7 +23,7 @@ async def root():
     return {"message": "Reank some docs! See /docs for more info."}
 
 @app.post("/rerank/")
-async def vectorize(query: str, documents: List[str], top_k: int):
+async def rerank(query: str, documents: List[str], top_k: int):
     results = model.rank(query, documents, return_documents=True, top_k=top_k)
     # Clean up those float32's
     serializable_list = [{k: float(v) if isinstance(v, np.float32) else v for k, v in d.items()} for d in results]
