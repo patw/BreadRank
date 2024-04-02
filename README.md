@@ -1,4 +1,4 @@
-# BreadRamk
+# BreadRank
 
 A small reranker API service powered by mixedbred.ai reranker model.  It's currently using the mxbai-rerank-xsmall-v1 model.
 
