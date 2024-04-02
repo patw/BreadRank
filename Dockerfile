@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 3007
 
 # Run app.py when the container launches
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "3007"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "3007"]

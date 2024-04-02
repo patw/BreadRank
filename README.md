@@ -14,6 +14,13 @@ pip install -r requirements.txt
 uvicorn main:app --host 0.0.0.0 --port 3007
 ```
 
+## Docker
+
+```
+docker build -t breadrank .
+docker run -d -p 3007:3007 breadrank
+```
+
 **Warning**: The first run will be VERY slow to load
 
 Visit `http://localhost:3007/docs` in a browser once it's loaded
